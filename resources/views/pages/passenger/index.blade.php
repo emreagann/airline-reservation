@@ -38,10 +38,9 @@
                             <input type="number" maxlength="11" class="form-control" name="phone">
 
                         </div>
-                    </div>
                     <div class="row">
                         <div class="col-md-12 mt-3">
-                            <input type="submit" class="btn btn-info"  style="font-weight: bold;" value="Submit">
+                            <input type="submit" class="btn btn-secondary"  style="font-weight: bold;" value="Submit">
                         </div>
 
                     </div>
