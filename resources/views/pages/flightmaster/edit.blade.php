@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-
+@include('layout.navbar')
     <div class="container">
 
         <h3 style="font-weight: bold;font-size: 50px;" align="center" class="mt-5">Flight Master Edit</h3>
