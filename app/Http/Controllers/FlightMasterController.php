@@ -16,7 +16,7 @@ class FlightMasterController extends Controller
     
     $response['flightmasters'] = $this->flightmaster->all();
 
-$json = file_get_contents('C:/xampp/htdocs/airline/airline/airports.json');
+$json = file_get_contents('airports.json');
 
   $airports = collect(json_decode($json, true))
     ->filter(function($airport) {
@@ -58,7 +58,7 @@ $json = file_get_contents('C:/xampp/htdocs/airline/airline/airports.json');
 {
     $flightmasters = $this->flightmaster->findOrFail($id);
 
-$json = file_get_contents('C:/xampp/htdocs/airline/airline/airports.json');
+$json = file_get_contents(base_path('airports.json'));
     $airports = collect(json_decode($json, true))
         ->pluck('name')
         ->filter()
