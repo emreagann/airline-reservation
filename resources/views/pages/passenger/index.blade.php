@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <h3  style="font-weight: bold;" align="center" class="mt-5">Passenger Information</h3>
+        <h3  style="font-weight: bold; font-size: 50px;" align="center" class="mt-5">Passenger Information</h3>
 
         <div class="row">
             <div class="col-md-2">
