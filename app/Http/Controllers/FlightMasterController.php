@@ -58,7 +58,7 @@ $json = file_get_contents('airports.json');
 {
     $flightmasters = $this->flightmaster->findOrFail($id);
 
-$json = file_get_contents(base_path('airline-reservation/airports.json'));
+$json = file_get_contents(base_path('airports.json'));
     $airports = collect(json_decode($json, true))
         ->pluck('name')
         ->filter()
