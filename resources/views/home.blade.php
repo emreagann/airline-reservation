@@ -15,63 +15,6 @@
 body {
   margin: 0;
 }
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
@@ -93,14 +36,12 @@ body {
   background-color: #ddd;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -327,12 +268,7 @@ body {
 </style>
 </head>
 <body>
-   <div class="navbar">
-  <a style="font-weight: bold" href="#"><i class="fa fa-home"></i> Home</a>
-  <a style="font-weight: bold;" href="{{ url('passenger') }}"><i class="fa fa-user"></i> Passenger</a>
-  <a style="font-weight: bold;" href="{{ url('flightmaster') }}"><i class="fa fa-plane"></i> Flight</a>
-  <a style="font-weight: bold;" href="{{ url('booking') }}"><i class="fa fa-ticket"></i> Booking</a>
-</div>
+  @include('layout.navbar')
 <div class="container">
     <div class="plane-title"><h1>Airline Reservation System</h1></div>
 <div class="airplaneAnimation">
