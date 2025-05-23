@@ -109,7 +109,7 @@
         .form-area{
             padding: 20px;
             margin-top: 20px;
-              background-color:#ff7300;
+              background-color:#ffb300;
         }
 
         .bi-trash-fill{
