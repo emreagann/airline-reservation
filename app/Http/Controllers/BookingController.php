@@ -37,7 +37,7 @@ public function edit($id)
     $booking = Booking::findOrFail($id);
     $flightmasters = $booking->flightmaster;
 
-    $airportsData = json_decode(file_get_contents(base_path(path: 'airports.json')), true);
+    $airportsData = json_decode(file_get_contents(base_path(path: ''../airports.json')), true);
     $airports = array_column($airportsData, 'name');
 
     return view('pages.booking.edit', compact('booking', 'flightmasters', 'airports'));
