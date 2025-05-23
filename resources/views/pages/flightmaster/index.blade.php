@@ -45,7 +45,7 @@
                         </div>
                             <div class="row">
                         <div class="col-md-12 mt-3">
-                            <input type="submit" class="btn btn-info" style="font-weight: bold;" value="Submit">
+                            <input type="submit" class="btn btn-warning" style="font-weight: bold;" value="Submit">
                         </div>
 
                     </div>
