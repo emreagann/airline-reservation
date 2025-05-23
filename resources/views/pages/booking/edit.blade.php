@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <h3 align="center" class="mt-5">Booking Edit</h3>
+        <h3 style="font-weight: bold;font-size: 50px;" align="center" class="mt-5">Booking Edit</h3>
 
         <div class="row">
             <div class="col-md-2">
