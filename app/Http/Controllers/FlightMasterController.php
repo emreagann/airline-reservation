@@ -16,7 +16,7 @@ class FlightMasterController extends Controller
     
     $response['flightmasters'] = $this->flightmaster->all();
 
-$json = file_get_contents(__DIR__ . '/airports.json');
+$json = file_get_contents('airports.json');
 
   $airports = collect(json_decode($json, true))
     ->filter(function($airport) {
