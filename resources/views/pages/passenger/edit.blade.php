@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <h3 align="center" class="mt-5">Passenger</h3>
+        <h3 style="font-weight: bold; font-size: 50px;" align="center" class="mt-5">Passenger</h3>
 
         <div class="row">
             <div class="col-md-2">
@@ -17,15 +17,15 @@
                   @method("PATCH")
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Name</label>
+                            <label style="font-weight: bold;">Name</label>
                             <input type="text" class="form-control" name="name" value="{{ $passengers->name }}">
                         </div>
                         <div class="col-md-6">
-                            <label>Age</label>
+                            <label style="font-weight: bold;">Age</label>
                             <input type="text" class="form-control" name="age" value="{{ $passengers->age }}">
                         </div>
                          <div class="col-md-6">
-                            <label>Gender</label>
+                            <label style="font-weight: bold;">Gender</label>
                             <select class="form-select" aria-label="Default select example" name="gender">
                                 <option value="Male" {{ $passengers->gender == 'Male' ? 'selected' : '' }}>Male</option>
                                 <option value="Female" {{ $passengers->gender == 'Female' ? 'selected' : '' }}>Female</option>
@@ -34,14 +34,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <label>Phone</label>
+                            <label style="font-weight: bold;">Phone</label>
                             <input type="text" class="form-control" name="phone" value="{{ $passengers->phone }}">
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col-md-12 mt-3">
-                            <input type="submit" class="btn btn-primary" value="Update">
+                            <input type="submit" class="btn btn-primary" style="font-weight: bold;" value="Update">
                         </div>
 
                     </div>
