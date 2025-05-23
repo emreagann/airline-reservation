@@ -82,5 +82,4 @@ $json = file_get_contents('C:/xampp/htdocs/airline/airline/airports.json');
         return redirect('flightmaster');
     }
 
-
 }
